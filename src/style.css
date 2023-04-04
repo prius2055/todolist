@@ -1,0 +1,162 @@
+body {
+  background-color: #ccc;
+}
+
+.todo-container {
+  background-color: #ccc;
+  max-width: 800px;
+  margin: 50px auto;
+  box-shadow: -1px 2px 14px 4px rgba(0, 0, 0, 0.75);
+}
+
+.todo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 20px;
+  background-color: white;
+  margin-bottom: 3px;
+}
+
+.todo-header h1 {
+  color: #555;
+}
+
+.todo-header i {
+  color: #888;
+  cursor: pointer;
+}
+
+.todo-input {
+  padding: 8px 20px;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  margin-bottom: 3px;
+}
+
+.todo-input input {
+  border: none;
+  font-size: 30px;
+  font-style: italic;
+}
+
+.todo-input input:focus {
+  outline: none;
+}
+
+.todo-input img {
+  cursor: pointer;
+}
+
+.todos {
+  padding: 0;
+  margin: 0;
+}
+
+.todo-item {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  margin-bottom: 3px;
+  position: relative;
+  cursor: pointer;
+}
+
+.todo-description {
+  font-size: 30px;
+  border: none;
+  color: #555;
+  margin-left: 20px;
+  width: 80%;
+}
+
+.todo-description.active {
+  background-color: rgb(246, 200, 116);
+}
+
+.mark-description {
+  text-decoration: line-through;
+}
+
+.todo-description:focus {
+  outline: none;
+}
+
+.todo-item.active {
+  background-color: rgb(246, 200, 116);
+}
+
+.vertical-menu {
+  visibility: visible;
+}
+
+.vertical-menu.active {
+  visibility: hidden;
+}
+
+.todo-trash {
+  visibility: hidden;
+}
+
+.todo-trash.active {
+  visibility: visible;
+  cursor: pointer;
+}
+
+.todos .menu {
+  display: flex;
+  position: absolute;
+  right: 2%;
+  cursor: move;
+}
+
+.todos hr {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.todo-action p {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: #555;
+}
+
+.todos button p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+.todo-footer {
+  background-color: #ccc;
+}
+
+.footer-paragraph {
+  cursor: pointer;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #555;
+}
+
+.checkbox {
+  width: 30px;
+  height: 30px;
+  border: 2px solid red;
+  background-color: red;
+}
+
+.checkbox.active {
+  background-color: rgb(246, 200, 116);
+}
